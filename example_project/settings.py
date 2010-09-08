@@ -99,3 +99,4 @@ INSTALLED_APPS = (
 ALFAJOR_NAMES = ['functional']
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 
+NOSE_ARGS = ['--browser=firefox,googlechrome']
