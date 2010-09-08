@@ -12,6 +12,7 @@ from . import browser
 
 
 def test_simple():
+    settings.DEBUG = True
     browser.open('/')
 
     if 'status' in browser.capabilities:
