@@ -43,8 +43,10 @@ def test_user_agent():
     assert ua['browser'] != 'unknown'
 
 from foo.models import Foo
+from django.conf import settings
 
 def test_parallel_database_access():
+    settings.DEBUG = True
     browser.open('/foocount')
     assert browser.document['#foocount'].text == '0'
 
