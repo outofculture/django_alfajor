@@ -11,6 +11,8 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   usage.rst
+
 Indices and tables
 ==================
 
@@ -18,3 +20,11 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
+Summary
+=======
+
+Django_alfajor is the glue to make `Django
+<http://www.djangoproject.com>`_ and `Alfajor
+<http://github.com/idealistdev/alfajor/>`_ work together with less work
+from the end user so they can just jump in and start writing tests
+(after minor configuration.
