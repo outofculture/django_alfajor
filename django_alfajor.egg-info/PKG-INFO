@@ -1,17 +1,13 @@
 Metadata-Version: 1.0
 Name: django-alfajor
 Version: 0.1
-Summary: Alfajor functional testing for django
-Home-page: http://github.com/freyley/django_alfajor/
-Author: Jeff Schwaber
-Author-email: freyley@gmail.com
+Summary: UNKNOWN
+Home-page: http://http://github.com/outofculture/django_alfajor
+Author: UNKNOWN
+Author-email: UNKNOWN
 License: BSD
-Description: django_alfajor
-        -------
-        
-        Provides access to Alfajor within Django's manage.py test framework.
-        
-Keywords: testing test functional integration browser ajax selenium django
+Description: moo
+Keywords: testing test functional integration browser ajax selenium
 Platform: UNKNOWN
 Classifier: Development Status :: 1 - Planning
 Classifier: Intended Audience :: Developers
