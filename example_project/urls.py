@@ -1,5 +1,5 @@
 from django.conf.urls.defaults import *
-from foo.views import list, addfoo, editfoo, deletefoo
+from foos.views import list, addfoo, editfoo, deletefoo
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin

@@ -91,7 +91,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django_alfajor',
     'django_nose',
-    'foo',
+    'foos',
     # Uncomment the next line to enable the admin:
     # 'django.contrib.admin',
 )

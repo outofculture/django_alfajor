@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>List of Foos</h1>
+    <div id="foo-list">
+        <ul>
+            {% for foo in foos %}
+            <li>{{ foo.name }}
+                <a href="{% url edit_foo foo.id %}">edit</a>
+                <a href="{% url delete_foo foo.id %}">delete</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    <a href="{% url add_foo %}">Add a Foo</a>
+{% endblock %}
