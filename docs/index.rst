@@ -12,6 +12,7 @@ Contents:
    :maxdepth: 2
 
    usage.rst
+   getting_started.rst
 
 Indices and tables
 ==================
