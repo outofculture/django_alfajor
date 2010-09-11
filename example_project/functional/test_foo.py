@@ -33,6 +33,7 @@ class test_basics(TransactionTestCase):
         browser.open('/')
         browser.page = Page()
         browser.page.click_on_home()
+        # browser.page will be redefined by click_on_home
 
     def tearDown(self):
         # put any code you want to execute after every test block here.
