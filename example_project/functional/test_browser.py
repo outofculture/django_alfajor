@@ -46,15 +46,10 @@ def test_user_agent():
 from foo.models import Foo
 from django.conf import settings
 
-def test_parallel_database_access():
+def test_that_database_access_works():
     settings.DEBUG = True
     browser.open('/foocount')
     assert browser.document['#foocount'].text == '0'
-
-    Foo.objects.create(name="foo1")
-    browser.open('/foocount')
-    assert browser.document['#foocount'].text == '1'
-
 
 # def test_traversal():
 #     browser.open('/seq/a')
