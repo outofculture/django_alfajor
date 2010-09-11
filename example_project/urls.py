@@ -1,5 +1,5 @@
 from django.conf.urls.defaults import *
-from foo.views import foocount, index
+from foo.views import list, addfoo, editfoo, deletefoo
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
@@ -7,13 +7,8 @@ from foo.views import foocount, index
 
 urlpatterns = patterns(
     '',
-    url(r'^$', index, name='index'),
-    url(r'^foocount', foocount, name='foocount'),
-
-    # Uncomment the admin/doc line below and add 'django.contrib.admindocs' 
-    # to INSTALLED_APPS to enable admin documentation:
-    # (r'^admin/doc/', include('django.contrib.admindocs.urls')),
-
-    # Uncomment the next line to enable the admin:
-    # (r'^admin/', include(admin.site.urls)),
+    url(r'^$', list, name='list'),
+    url(r'^add_foo', addfoo, name='add_foo'),
+    url(r'^edit/(?P<foo_id>[0-9]*)', editfoo, name='edit_foo'),
+    url(r'^delete/(?P<foo_id>[0-9]*)', deletefoo, name='delete_foo'),
 )

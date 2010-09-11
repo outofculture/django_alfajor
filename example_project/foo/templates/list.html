@@ -1,0 +1,17 @@
+<html>
+<head></head>
+<body>
+
+    <h1>List of Foos</h1>
+    <ul>
+        {% for foo in foos %}
+        <li>{{ foo.name }}
+            <a href="{% url edit_foo foo.id %}">edit</a>
+            <a href="{% url delete_foo foo.id %}">delete</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="{% url add_foo %}">Add a Foo</a>
+
+</body>
+</html>
