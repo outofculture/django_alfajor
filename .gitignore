@@ -4,3 +4,5 @@
 *.orig
 *~
 _build
+dev.db
+test_dev.db

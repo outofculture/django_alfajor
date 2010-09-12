@@ -5,7 +5,7 @@
 # See LICENSE for more details.
 from django.test import TransactionTestCase
 
-from functional import browser
+from . import browser
 import nose.tools as nt
 
 from pageobjects.foo import Page, NotFoundOnPage

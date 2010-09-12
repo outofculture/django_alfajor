@@ -1,4 +1,4 @@
-from functional import browser
+from .. import browser
 
 
 class NotFoundOnPage(Exception): pass
